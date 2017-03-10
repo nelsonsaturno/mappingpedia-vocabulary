@@ -1,0 +1,166 @@
+{
+  "@context" : {
+    "MappingpediaUser" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#MappingpediaUser"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "Dataset" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#Dataset"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "mappingDocumentIdentifier" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mappingDocumentIdentifier"
+    },
+    "Distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution",
+      "@type" : "@id"
+    },
+    "requestTitle" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#requestTitle"
+    },
+    "datasetFileName" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetFileName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "datasetMediaType" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetMediaType"
+    },
+    "R2RMLMappingDocument" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#R2RMLMappingDocument"
+    },
+    "fullName" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#fullName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasDataset" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#hasDataset",
+      "@type" : "@id"
+    },
+    "hasMappingDocument" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#hasMappingDocument",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/dc/elements/1.1/Agent"
+    },
+    "requestDescription" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mpv:requestDescription",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator",
+      "@type" : "@id"
+    },
+    "requestStatus" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#requestStatus",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "datasetKeyword" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetKeyword"
+    },
+    "status" : {
+      "@id" : "http://open-services.net/ns/cm#status"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "mappingDocumentTitle" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mappingDocumentTitle"
+    },
+    "keyword" : {
+      "@id" : "http://www.w3.org/ns/dcat#keyword"
+    },
+    "datasetDistribution" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetDistribution",
+      "@type" : "@id"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/elements/1.1/subject"
+    },
+    "hasRequestDataset" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#hasRequestDataset",
+      "@type" : "@id"
+    },
+    "mappingDocumentDateSubmitted" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mappingDocumentDateSubmitted"
+    },
+    "requestResolution" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#requestResolution",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "mappingDocumentLicense" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mappingDocumentLicense"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "dateSubmitted" : {
+      "@id" : "http://purl.org/dc/elements/1.1/dateSubmitted"
+    },
+    "MappingRequest" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#MappingRequest"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "mediaType" : {
+      "@id" : "http://www.w3.org/ns/dcat#mediaType"
+    },
+    "BibliographicResource" : {
+      "@id" : "http://purl.org/dc/elements/1.1/BibliographicResource"
+    },
+    "datasetPublisher" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetPublisher"
+    },
+    "mappingDocumentSubject" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mappingDocumentSubject"
+    },
+    "DatasetDistribution" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#DatasetDistribution"
+    },
+    "requestCreator" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#requestCreator",
+      "@type" : "@id"
+    },
+    "datasetTitle" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetTitle"
+    },
+    "mappingDocumentCreator" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#mappingDocumentCreator",
+      "@type" : "@id"
+    },
+    "requestCreated" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#requestCreated",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/elements/1.1/language"
+    },
+    "requestIdentifier" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#requestIdentifier"
+    },
+    "ChangeRequest" : {
+      "@id" : "http://open-services.net/ns/cm#ChangeRequest"
+    },
+    "datasetIdentifier" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetIdentifier"
+    },
+    "datasetLanguage" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#datasetLanguage"
+    },
+    "hasMappingDocumentFile" : {
+      "@id" : "http://mappingpedia.linkeddata.es/vocabulary#hasMappingDocumentFile",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}
