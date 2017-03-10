@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://mappingpedia.linkeddata.es/vocabulary"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://mappingpedia.linkeddata.es/vocabulary">
+    <Prefix name="" IRI="http://mappingpedia.linkeddata.es/vocabulary"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatasetDistribution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMappingDocumentFile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/dateSubmitted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://open-services.net/ns/cm#ChangeRequest"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/dc/elements/1.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mappingDocumentSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetMediaType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/dcat#distribution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMappingDocument"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#mediaType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mappingDocumentLicense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mappingDocumentIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRequestDataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requestResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requestTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetFileName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dcat#Distribution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mappingDocumentDateSubmitted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/dcat#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requestIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fullName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requestCreated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mpv:requestDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MappingRequest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mappingDocumentTitle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requestCreator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#datasetDistribution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://open-services.net/ns/cm#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetTitle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mappingDocumentCreator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#keyword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MappingpediaUser"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetKeyword"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requestStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetPublisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <Class IRI="http://www.w3.org/ns/dcat#Dataset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DatasetDistribution"/>
+        <Class IRI="http://www.w3.org/ns/dcat#Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MappingRequest"/>
+        <Class IRI="http://open-services.net/ns/cm#ChangeRequest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MappingpediaUser"/>
+        <Class IRI="http://purl.org/dc/elements/1.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#R2RMLMappingDocument"/>
+        <Class IRI="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#datasetDistribution"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/dcat#distribution"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mappingDocumentCreator"/>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requestCreator"/>
+        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataset"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMappingDocument"/>
+        <Class IRI="#MappingRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRequestDataset"/>
+        <Class IRI="#MappingRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mappingDocumentCreator"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requestCreator"/>
+        <Class IRI="#MappingRequest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/dcat#distribution"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#datasetDistribution"/>
+        <Class IRI="#DatasetDistribution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataset"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMappingDocument"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRequestDataset"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mappingDocumentCreator"/>
+        <Class IRI="#MappingpediaUser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requestCreator"/>
+        <Class IRI="#MappingpediaUser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/dcat#distribution"/>
+        <Class IRI="http://www.w3.org/ns/dcat#Distribution"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetIdentifier"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetKeyword"/>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#keyword"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetLanguage"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetMediaType"/>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#mediaType"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetPublisher"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetTitle"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mappingDocumentDateSubmitted"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/dateSubmitted"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mappingDocumentIdentifier"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mappingDocumentLicense"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mappingDocumentSubject"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mappingDocumentTitle"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#requestCreated"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#requestIdentifier"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#requestStatus"/>
+        <DataProperty IRI="http://open-services.net/ns/cm#status"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#requestTitle"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#mpv:requestDescription"/>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetFileName"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetIdentifier"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetKeyword"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetLanguage"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetMediaType"/>
+        <Class IRI="#DatasetDistribution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetPublisher"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetTitle"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fullName"/>
+        <Class IRI="#MappingpediaUser"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMappingDocumentFile"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mappingDocumentDateSubmitted"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mappingDocumentIdentifier"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mappingDocumentLicense"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mappingDocumentSubject"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mappingDocumentTitle"/>
+        <Class IRI="#R2RMLMappingDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requestCreated"/>
+        <Class IRI="#MappingRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requestIdentifier"/>
+        <Class IRI="#MappingRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requestResolution"/>
+        <Class IRI="#MappingRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requestStatus"/>
+        <Class IRI="#MappingRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requestTitle"/>
+        <Class IRI="#MappingRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mpv:requestDescription"/>
+        <Class IRI="#MappingRequest"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#mediaType"/>
+        <Class IRI="http://www.w3.org/ns/dcat#Distribution"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#datasetFileName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fullName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMappingDocumentFile"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requestCreated"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requestResolution"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requestStatus"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mpv:requestDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
