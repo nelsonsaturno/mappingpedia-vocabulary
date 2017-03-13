@@ -7,67 +7,7 @@
 []    a       owl:Ontology ;
       owl:DataPropertyDomain
               [ a       owl:DataProperty ;
-                <IRI>   "#datasetFileName"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestResolution"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestTitle"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetMediaType"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestStatus"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestIdentifier"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetLanguage"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "http://www.w3.org/ns/dcat#mediaType"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetTitle"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#mpv:requestDescription"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetPublisher"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetIdentifier"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetKeyword"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentDateSubmitted"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentIdentifier"
-              ] ;
-      owl:DataPropertyDomain
-              [ a       owl:DataProperty ;
-                <IRI>   "#fullName"
+                <IRI>   "#mappingDocumentTitle"
               ] ;
       owl:DataPropertyDomain
               [ a       owl:DataProperty ;
@@ -79,23 +19,79 @@
               ] ;
       owl:DataPropertyDomain
               [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentTitle"
+                <IRI>   "#datasetIdentifier"
               ] ;
       owl:DataPropertyDomain
               [ a       owl:DataProperty ;
-                <IRI>   "#hasMappingDocumentFile"
+                <IRI>   "#datasetFileName"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestIdentifier"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetKeyword"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentIdentifier"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetMediaType"
               ] ;
       owl:DataPropertyDomain
               [ a       owl:DataProperty ;
                 <IRI>   "#mappingDocumentLicense"
               ] ;
-      owl:DataPropertyRange
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentDateSubmitted"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetLanguage"
+              ] ;
+      owl:DataPropertyDomain
               [ a       owl:DataProperty ;
                 <IRI>   "#hasMappingDocumentFile"
               ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "http://www.w3.org/ns/dcat#mediaType"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestStatus"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestResolution"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetPublisher"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestTitle"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#fullName"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetTitle"
+              ] ;
+      owl:DataPropertyDomain
+              [ a       owl:DataProperty ;
+                <IRI>   "#mpv:requestDescription"
+              ] ;
       owl:DataPropertyRange
               [ a       owl:DataProperty ;
-                <IRI>   "#requestCreated"
+                <IRI>   "#hasMappingDocumentFile"
               ] ;
       owl:DataPropertyRange
               [ a       owl:DataProperty ;
@@ -103,7 +99,7 @@
               ] ;
       owl:DataPropertyRange
               [ a       owl:DataProperty ;
-                <IRI>   "#datasetFileName"
+                <IRI>   "#requestStatus"
               ] ;
       owl:DataPropertyRange
               [ a       owl:DataProperty ;
@@ -111,19 +107,47 @@
               ] ;
       owl:DataPropertyRange
               [ a       owl:DataProperty ;
+                <IRI>   "#requestCreated"
+              ] ;
+      owl:DataPropertyRange
+              [ a       owl:DataProperty ;
                 <IRI>   "#requestResolution"
               ] ;
       owl:DataPropertyRange
               [ a       owl:DataProperty ;
-                <IRI>   "#requestStatus"
+                <IRI>   "#datasetFileName"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "http://open-services.net/ns/cm#status"
+                <IRI>   "#mappingDocumentDateSubmitted"
+              ] ;
+      owl:Declaration
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#hasRequestDataset"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#datasetLanguage"
+                <IRI>   "http://purl.org/dc/elements/1.1/title"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#hasMappingDocumentFile"
+              ] ;
+      owl:Declaration
+              [ a       owl:Class ;
+                <IRI>   "#R2RMLMappingDocument"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetTitle"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#fullName"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://purl.org/dc/elements/1.1/created"
               ] ;
       owl:Declaration
               [ a       owl:Class ;
@@ -131,19 +155,7 @@
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#requestIdentifier"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetPublisher"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "http://purl.org/dc/elements/1.1/created"
-              ] ;
-      owl:Declaration
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#hasDataset"
+                <IRI>   "#datasetLanguage"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
@@ -154,76 +166,8 @@
                 <IRI>   "#mappingDocumentSubject"
               ] ;
       owl:Declaration
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#hasRequestDataset"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
-                <IRI>   "#R2RMLMappingDocument"
-              ] ;
-      owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#hasMappingDocumentFile"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#mpv:requestDescription"
-              ] ;
-      owl:Declaration
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#datasetDistribution"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentLicense"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentDateSubmitted"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
-                <IRI>   "#MappingpediaUser"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "http://purl.org/dc/elements/1.1/identifier"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestStatus"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetTitle"
-              ] ;
-      owl:Declaration
-              [ a       owl:ObjectProperty ;
-                <IRI>   "http://www.w3.org/ns/dcat#distribution"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestResolution"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "http://www.w3.org/ns/dcat#mediaType"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
-                <IRI>   "http://purl.org/dc/elements/1.1/Agent"
-              ] ;
-      owl:Declaration
-              [ a       owl:ObjectProperty ;
-                <IRI>   "http://purl.org/dc/elements/1.1/creator"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
-                <IRI>   "#MappingRequest"
-              ] ;
-      owl:Declaration
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#requestCreator"
+                <IRI>   "#datasetFileName"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
@@ -231,27 +175,67 @@
               ] ;
       owl:Declaration
               [ a       owl:Class ;
-                <IRI>   "http://purl.org/dc/elements/1.1/BibliographicResource"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
                 <IRI>   "http://www.w3.org/ns/dcat#Distribution"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#requestCreated"
+                <IRI>   "#mappingDocumentTitle"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentIdentifier"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
                 <IRI>   "http://purl.org/dc/elements/1.1/description"
               ] ;
       owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "http://www.w3.org/ns/dcat#keyword"
+              [ a       owl:Class ;
+                <IRI>   "#DatasetDistribution"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#datasetMediaType"
+                <IRI>   "#requestCreated"
+              ] ;
+      owl:Declaration
+              [ a       owl:Class ;
+                <IRI>   "http://open-services.net/ns/cm#ChangeRequest"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetIdentifier"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://open-services.net/ns/cm#status"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://purl.org/dc/elements/1.1/publisher"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://www.w3.org/ns/dcat#mediaType"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestStatus"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "#mpv:requestDescription"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://purl.org/dc/elements/1.1/dateSubmitted"
+              ] ;
+      owl:Declaration
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#mappingDocumentCreator"
+              ] ;
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://www.w3.org/ns/dcat#keyword"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
@@ -262,12 +246,12 @@
                 <IRI>   "#requestTitle"
               ] ;
       owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "http://purl.org/dc/elements/1.1/dateSubmitted"
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#datasetDistribution"
               ] ;
       owl:Declaration
               [ a       owl:Class ;
-                <IRI>   "#Dataset"
+                <IRI>   "http://purl.org/dc/elements/1.1/BibliographicResource"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
@@ -275,51 +259,63 @@
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#datasetIdentifier"
+                <IRI>   "#datasetMediaType"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "http://purl.org/dc/elements/1.1/title"
+                <IRI>   "#mappingDocumentLicense"
+              ] ;
+      owl:Declaration
+              [ a       owl:Class ;
+                <IRI>   "#MappingRequest"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentTitle"
+                <IRI>   "#datasetPublisher"
               ] ;
       owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#fullName"
+              [ a       owl:Class ;
+                <IRI>   "#MappingpediaUser"
               ] ;
       owl:Declaration
               [ a       owl:ObjectProperty ;
-                <IRI>   "#mappingDocumentCreator"
+                <IRI>   "http://purl.org/dc/elements/1.1/creator"
+              ] ;
+      owl:Declaration
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#hasDataset"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "http://purl.org/dc/elements/1.1/publisher"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
-                <IRI>   "#DatasetDistribution"
+                <IRI>   "#requestIdentifier"
               ] ;
       owl:Declaration
               [ a       owl:DataProperty ;
-                <IRI>   "#datasetFileName"
-              ] ;
-      owl:Declaration
-              [ a       owl:Class ;
-                <IRI>   "http://open-services.net/ns/cm#ChangeRequest"
-              ] ;
-      owl:Declaration
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentIdentifier"
+                <IRI>   "#requestResolution"
               ] ;
       owl:Declaration
               [ a       owl:ObjectProperty ;
                 <IRI>   "#hasMappingDocument"
               ] ;
-      owl:ObjectPropertyDomain
+      owl:Declaration
+              [ a       owl:DataProperty ;
+                <IRI>   "http://purl.org/dc/elements/1.1/identifier"
+              ] ;
+      owl:Declaration
+              [ a       owl:Class ;
+                <IRI>   "http://purl.org/dc/elements/1.1/Agent"
+              ] ;
+      owl:Declaration
+              [ a       owl:Class ;
+                <IRI>   "#Dataset"
+              ] ;
+      owl:Declaration
               [ a       owl:ObjectProperty ;
-                <IRI>   "#hasMappingDocument"
+                <IRI>   "http://www.w3.org/ns/dcat#distribution"
+              ] ;
+      owl:Declaration
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#requestCreator"
               ] ;
       owl:ObjectPropertyDomain
               [ a       owl:ObjectProperty ;
@@ -327,31 +323,43 @@
               ] ;
       owl:ObjectPropertyDomain
               [ a       owl:ObjectProperty ;
-                <IRI>   "#hasRequestDataset"
-              ] ;
-      owl:ObjectPropertyDomain
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#mappingDocumentCreator"
-              ] ;
-      owl:ObjectPropertyDomain
-              [ a       owl:ObjectProperty ;
-                <IRI>   "http://www.w3.org/ns/dcat#distribution"
+                <IRI>   "#hasMappingDocument"
               ] ;
       owl:ObjectPropertyDomain
               [ a       owl:ObjectProperty ;
                 <IRI>   "#requestCreator"
               ] ;
+      owl:ObjectPropertyDomain
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#mappingDocumentCreator"
+              ] ;
+      owl:ObjectPropertyDomain
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#hasRequestDataset"
+              ] ;
+      owl:ObjectPropertyDomain
+              [ a       owl:ObjectProperty ;
+                <IRI>   "http://www.w3.org/ns/dcat#distribution"
+              ] ;
       owl:ObjectPropertyRange
               [ a       owl:ObjectProperty ;
                 <IRI>   "http://www.w3.org/ns/dcat#distribution"
               ] ;
       owl:ObjectPropertyRange
               [ a       owl:ObjectProperty ;
-                <IRI>   "#hasDataset"
+                <IRI>   "#hasRequestDataset"
               ] ;
       owl:ObjectPropertyRange
               [ a       owl:ObjectProperty ;
-                <IRI>   "#hasRequestDataset"
+                <IRI>   "#mappingDocumentCreator"
+              ] ;
+      owl:ObjectPropertyRange
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#requestCreator"
+              ] ;
+      owl:ObjectPropertyRange
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#hasDataset"
               ] ;
       owl:ObjectPropertyRange
               [ a       owl:ObjectProperty ;
@@ -361,13 +369,13 @@
               [ a       owl:ObjectProperty ;
                 <IRI>   "#datasetDistribution"
               ] ;
-      owl:ObjectPropertyRange
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#mappingDocumentCreator"
+      owl:Prefix
+              [ <IRI>   "http://www.w3.org/XML/1998/namespace" ;
+                <name>  "xml"
               ] ;
-      owl:ObjectPropertyRange
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#requestCreator"
+      owl:Prefix
+              [ <IRI>   "http://www.w3.org/2001/XMLSchema#" ;
+                <name>  "xsd"
               ] ;
       owl:Prefix
               [ <IRI>   "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ;
@@ -378,24 +386,12 @@
                 <name>  "rdfs"
               ] ;
       owl:Prefix
-              [ <IRI>   "http://www.w3.org/2001/XMLSchema#" ;
-                <name>  "xsd"
-              ] ;
-      owl:Prefix
-              [ <IRI>   "http://www.w3.org/XML/1998/namespace" ;
-                <name>  "xml"
+              [ <IRI>   "http://www.w3.org/2002/07/owl#" ;
+                <name>  "owl"
               ] ;
       owl:Prefix
               [ <IRI>   "http://mappingpedia.linkeddata.es/vocabulary" ;
                 <name>  ""
-              ] ;
-      owl:Prefix
-              [ <IRI>   "http://www.w3.org/2002/07/owl#" ;
-                <name>  "owl"
-              ] ;
-      owl:SubClassOf
-              [ a       owl:Class ;
-                <IRI>   "#DatasetDistribution"
               ] ;
       owl:SubClassOf
               [ a       owl:Class ;
@@ -403,7 +399,11 @@
               ] ;
       owl:SubClassOf
               [ a       owl:Class ;
-                <IRI>   "#MappingRequest"
+                <IRI>   "#MappingpediaUser"
+              ] ;
+      owl:SubClassOf
+              [ a       owl:Class ;
+                <IRI>   "#DatasetDistribution"
               ] ;
       owl:SubClassOf
               [ a       owl:Class ;
@@ -411,7 +411,47 @@
               ] ;
       owl:SubClassOf
               [ a       owl:Class ;
-                <IRI>   "#MappingpediaUser"
+                <IRI>   "#MappingRequest"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#mpv:requestDescription"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentLicense"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentSubject"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentDateSubmitted"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetIdentifier"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetTitle"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#mappingDocumentTitle"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#datasetKeyword"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestStatus"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestIdentifier"
               ] ;
       owl:SubDataPropertyOf
               [ a       owl:DataProperty ;
@@ -419,7 +459,11 @@
               ] ;
       owl:SubDataPropertyOf
               [ a       owl:DataProperty ;
-                <IRI>   "#mpv:requestDescription"
+                <IRI>   "#datasetLanguage"
+              ] ;
+      owl:SubDataPropertyOf
+              [ a       owl:DataProperty ;
+                <IRI>   "#requestCreated"
               ] ;
       owl:SubDataPropertyOf
               [ a       owl:DataProperty ;
@@ -431,55 +475,7 @@
               ] ;
       owl:SubDataPropertyOf
               [ a       owl:DataProperty ;
-                <IRI>   "#requestStatus"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentDateSubmitted"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
                 <IRI>   "#datasetMediaType"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetTitle"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestIdentifier"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentTitle"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#requestCreated"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentSubject"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#mappingDocumentLicense"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetIdentifier"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetKeyword"
-              ] ;
-      owl:SubDataPropertyOf
-              [ a       owl:DataProperty ;
-                <IRI>   "#datasetLanguage"
-              ] ;
-      owl:SubObjectPropertyOf
-              [ a       owl:ObjectProperty ;
-                <IRI>   "#datasetDistribution"
               ] ;
       owl:SubObjectPropertyOf
               [ a       owl:ObjectProperty ;
@@ -488,5 +484,9 @@
       owl:SubObjectPropertyOf
               [ a       owl:ObjectProperty ;
                 <IRI>   "#requestCreator"
+              ] ;
+      owl:SubObjectPropertyOf
+              [ a       owl:ObjectProperty ;
+                <IRI>   "#datasetDistribution"
               ] ;
       <ontologyIRI> "http://mappingpedia.linkeddata.es/vocabulary" .
