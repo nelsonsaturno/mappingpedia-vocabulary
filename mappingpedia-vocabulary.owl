@@ -37,13 +37,13 @@
         <Class IRI="http://purl.org/dc/elements/1.1/Agent"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#distributionMediaType"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#mappingDocumentSubject"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#datasetMediaType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.w3.org/ns/dcat#distribution"/>
@@ -76,9 +76,6 @@
         <DataProperty IRI="#requestTitle"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#datasetFileName"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.w3.org/ns/dcat#Distribution"/>
     </Declaration>
     <Declaration>
@@ -86,6 +83,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/dcat#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#downloadURL"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#datasetIdentifier"/>
@@ -121,10 +121,10 @@
         <ObjectProperty IRI="#requestCreator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#datasetDistribution"/>
+        <DataProperty IRI="http://open-services.net/ns/cm#status"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://open-services.net/ns/cm#status"/>
+        <ObjectProperty IRI="#datasetDistribution"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -145,6 +145,12 @@
         <Class IRI="#MappingpediaUser"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#accessURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distributionDownloadURL"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#datasetLanguage"/>
     </Declaration>
     <Declaration>
@@ -158,6 +164,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#datasetPublisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distributionAccessURL"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
@@ -259,16 +268,24 @@
         <DataProperty IRI="http://purl.org/dc/elements/1.1/language"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#datasetMediaType"/>
-        <DataProperty IRI="http://www.w3.org/ns/dcat#mediaType"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#datasetPublisher"/>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#datasetTitle"/>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#distributionAccessURL"/>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#accessURL"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#distributionDownloadURL"/>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#downloadURL"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#distributionMediaType"/>
+        <DataProperty IRI="http://www.w3.org/ns/dcat#mediaType"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#mappingDocumentDateSubmitted"/>
@@ -311,10 +328,6 @@
         <DataProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#datasetFileName"/>
-        <Class IRI="#Dataset"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#datasetIdentifier"/>
         <Class IRI="#Dataset"/>
     </DataPropertyDomain>
@@ -327,16 +340,24 @@
         <Class IRI="#Dataset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#datasetMediaType"/>
-        <Class IRI="#DatasetDistribution"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#datasetPublisher"/>
         <Class IRI="#Dataset"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#datasetTitle"/>
         <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distributionAccessURL"/>
+        <Class IRI="#DatasetDistribution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distributionDownloadURL"/>
+        <Class IRI="#DatasetDistribution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distributionMediaType"/>
+        <Class IRI="#DatasetDistribution"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#fullName"/>
@@ -394,10 +415,6 @@
         <DataProperty IRI="http://www.w3.org/ns/dcat#mediaType"/>
         <Class IRI="http://www.w3.org/ns/dcat#Distribution"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#datasetFileName"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#fullName"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
